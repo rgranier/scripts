@@ -4,7 +4,7 @@ WEB='bluesandtechnology.com'
 USER='www-data'
 DIR="/var/www/$WEB/html"
 
-if [ -d "$DIR"]; then
+if [ -d "$DIR" ]; then
     echo "ERROR: This has already been run and needs cleanup."
     exit 1
 fi
