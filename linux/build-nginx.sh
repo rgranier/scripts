@@ -21,7 +21,7 @@ sudo echo "<html>
     <body>
         <h1>Success!  The example.com server block is working!</h1>
     </body>
-</html>" >
+</html>" > /var/www/$WEB/html/index.html
 
 
 sudo echo "server {
