@@ -12,7 +12,7 @@ fi
 sudo mkdir -p $DIR
 sudo chown -R $USER:$USER /var/www/$WEB/html
 
-sudo chmod -R 755 /var/www/$powderblue
+sudo chmod -R 755 /var/www/$WEB
 
 sudo echo "<html>
     <head>
