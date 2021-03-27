@@ -21,12 +21,12 @@ done
 USER='www-data'
 DIR="/var/www/$WEB/html"
 
-if (($# < 1)); then
+if (( $# < 1 )); then
     echo "$USAGE"
     exit 1
 fi
 
-if [-z $WEB ]; then
+if [ -z $WEB ]; then
     echo "$USAGE"
     exit 1
 fi
