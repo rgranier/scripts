@@ -2,6 +2,7 @@
 USAGE='usage:  build-nginx.sh -w <website_name> [-h]'
 # Default
 #WEB='bluesandtechnology.com'
+WEB='' # Instialize
 
 #TODO:  if you enter program <any argument> then it satisfies the test
 for one argument but does not set $WEB.
@@ -26,7 +27,7 @@ if (($# < 1)); then
     exit 1
 fi
 
-if [-z $WEB]; then
+if [-z $WEB ]; then
     echo "$USAGE"
     exit 1
 fi
