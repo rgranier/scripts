@@ -7,7 +7,8 @@ while getopts w:h flag
 do
     case "${flag}" in
         w) WEB=${OPTARG};;
-        h) echo $USAGE;;
+        h) echo $USAGE
+           exit 1;;
         \?) echo $USAGE
     esac
 done
