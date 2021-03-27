@@ -10,11 +10,10 @@ do
            echo "Website: $WEB";;
         h) echo $USAGE
            exit 1;;
-        \?) echo $USAGE
+        \?) echo $USAGE;;
+
     esac
 done
-
-
 
 USER='www-data'
 DIR="/var/www/$WEB/html"
