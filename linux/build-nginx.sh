@@ -34,7 +34,7 @@ sudo echo "server {
         server_name $WEB www.$WEB;
 
         location / {
-                try_files \$uri \$uri/ =40';
+                try_files \$uri \$uri/ =40;
         }
 }" > /etc/nginx/sites-available/$WEB
 
