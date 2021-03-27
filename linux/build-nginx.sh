@@ -17,10 +17,17 @@ echo "Website: $WEB";
 USER='www-data'
 DIR="/var/www/$WEB/html"
 
-if [ -d "$DIR" ]; then
-    echo "ERROR: Found $DIR.  This has already been run and needs cleanup."
+if (($# < 1)); then
+    echo "$USAGE"
     exit 1
 fi
+
+if [ -d "$DIR" ]; then
+    echo "ERROR: Found $DIR.  This has already been run and needs cleanup."
+    exit 2
+fi
+
+
 
 sudo mkdir -p $DIR
 sudo chown -R $USER:$USER /var/www/$WEB/html
