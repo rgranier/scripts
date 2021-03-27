@@ -10,7 +10,7 @@ do
            echo "Website: $WEB";;
         h) echo $USAGE
            exit 1;;
-        \?) echo $USAGE;;
+        \?) echo $USAGE; exit 1;;
 
     esac
 done
