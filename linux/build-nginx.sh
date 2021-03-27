@@ -1,6 +1,19 @@
 #!/bin/bash
+USAGE='usage:  $(basename $0) -w <website_name> [-h]'
+# Default
+#WEB='bluesandtechnology.com'
 
-WEB='bluesandtechnology.com'
+while getopts w:h flag
+do
+    case "${flag}" in
+        w) WEB=${OPTARG};;
+        h) echo $USAGE;;
+        \?) echo $USAGE
+    esac
+done
+
+echo "Website: $WEB";
+
 USER='www-data'
 DIR="/var/www/$WEB/html"
 
