@@ -19,7 +19,7 @@ sudo echo "<html>
         <title>Welcome to $WEB!</title>
     </head>
     <body>
-        <h1>Success!  $WEB server block is working!</h1>
+        <h1>Success!</h1>
         <h3>$WEB server block is working!</h3>
     </body>
 </html>" > /var/www/$WEB/html/index.html
