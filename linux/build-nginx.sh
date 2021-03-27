@@ -19,7 +19,7 @@ sudo echo "<html>
         <title>Welcome to $WEB!</title>
     </head>
     <body>
-        <h1>Success!  The example.com server block is working!</h1>
+        <h1>Success!  $WEB server block is working!</h1>
     </body>
 </html>" > /var/www/$WEB/html/index.html
 
@@ -34,7 +34,7 @@ sudo echo "server {
         server_name $WEB www.$WEB;
 
         location / {
-                try_files $uri $uri/ =404;
+                try_files \$uri \$uri/ =40';
         }
 }" > /etc/nginx/sites-available/$WEB
 
