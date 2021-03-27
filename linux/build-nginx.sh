@@ -3,6 +3,9 @@ USAGE='usage:  build-nginx.sh -w <website_name> [-h]'
 # Default
 #WEB='bluesandtechnology.com'
 
+#TODO:  if you enter program <any argument> then it satisfies the test
+for one argument but does not set $WEB.
+
 while getopts w:h flag
 do
     case "${flag}" in
@@ -19,6 +22,11 @@ USER='www-data'
 DIR="/var/www/$WEB/html"
 
 if (($# < 1)); then
+    echo "$USAGE"
+    exit 1
+fi
+
+if [-z $WEB]; then
     echo "$USAGE"
     exit 1
 fi
