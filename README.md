@@ -1,5 +1,10 @@
 # Script Collection
 
+# TODO
+We lose the ubuntu@server in the prompt with the git bash profile.
+\u@\h
+
+
 ## General Instructions
 This repo needs to be cloned on all servers.
 
